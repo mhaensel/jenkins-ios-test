@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398F405B1B93469500375018 /* JenkinsIOSTestLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F405A1B93469500375018 /* JenkinsIOSTestLogicTests.m */; };
+		398F40611B93652400375018 /* TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F40601B93652400375018 /* TestUtils.m */; };
+		398F40621B936A1100375018 /* TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F40601B93652400375018 /* TestUtils.m */; };
 		39A823DD1B8B8D0900F43744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A823DC1B8B8D0900F43744 /* main.m */; };
 		39A823E01B8B8D0900F43744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A823DF1B8B8D0900F43744 /* AppDelegate.m */; };
 		39A823E31B8B8D0900F43744 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A823E21B8B8D0900F43744 /* ViewController.m */; };
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		398F40561B93469500375018 /* JenkinsIOSTestLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenkinsIOSTestLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		398F40591B93469500375018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398F405A1B93469500375018 /* JenkinsIOSTestLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JenkinsIOSTestLogicTests.m; sourceTree = "<group>"; };
+		398F405F1B93652400375018 /* TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtils.h; sourceTree = "<group>"; };
+		398F40601B93652400375018 /* TestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtils.m; sourceTree = "<group>"; };
 		39A823D71B8B8D0900F43744 /* JenkinsIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A823DB1B8B8D0900F43744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39A823DC1B8B8D0900F43744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		398F40531B93469500375018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39A823D41B8B8D0900F43744 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +75,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398F40571B93469500375018 /* JenkinsIOSTestLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				398F405A1B93469500375018 /* JenkinsIOSTestLogicTests.m */,
+				398F40581B93469500375018 /* Supporting Files */,
+			);
+			path = JenkinsIOSTestLogicTests;
+			sourceTree = "<group>";
+		};
+		398F40581B93469500375018 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				398F40591B93469500375018 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		39A823CE1B8B8D0900F43744 = {
 			isa = PBXGroup;
 			children = (
 				39A823D91B8B8D0900F43744 /* JenkinsIOSTest */,
 				39A823F31B8B8D0A00F43744 /* JenkinsIOSTestTests */,
+				398F40571B93469500375018 /* JenkinsIOSTestLogicTests */,
 				39A823D81B8B8D0900F43744 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +107,7 @@
 			children = (
 				39A823D71B8B8D0900F43744 /* JenkinsIOSTest.app */,
 				39A823F01B8B8D0A00F43744 /* JenkinsIOSTestTests.xctest */,
+				398F40561B93469500375018 /* JenkinsIOSTestLogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +123,8 @@
 				39A823E71B8B8D0900F43744 /* Images.xcassets */,
 				39A823E91B8B8D0900F43744 /* LaunchScreen.xib */,
 				39A823DA1B8B8D0900F43744 /* Supporting Files */,
+				398F405F1B93652400375018 /* TestUtils.h */,
+				398F40601B93652400375018 /* TestUtils.m */,
 			);
 			path = JenkinsIOSTest;
 			sourceTree = "<group>";
@@ -122,6 +158,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		398F40551B93469500375018 /* JenkinsIOSTestLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 398F405E1B93469500375018 /* Build configuration list for PBXNativeTarget "JenkinsIOSTestLogicTests" */;
+			buildPhases = (
+				398F40521B93469500375018 /* Sources */,
+				398F40531B93469500375018 /* Frameworks */,
+				398F40541B93469500375018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JenkinsIOSTestLogicTests;
+			productName = JenkinsIOSTestLogicTests;
+			productReference = 398F40561B93469500375018 /* JenkinsIOSTestLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		39A823D61B8B8D0900F43744 /* JenkinsIOSTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39A823FA1B8B8D0A00F43744 /* Build configuration list for PBXNativeTarget "JenkinsIOSTest" */;
@@ -166,6 +219,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Matthias Hänsel";
 				TargetAttributes = {
+					398F40551B93469500375018 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					39A823D61B8B8D0900F43744 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -190,11 +246,19 @@
 			targets = (
 				39A823D61B8B8D0900F43744 /* JenkinsIOSTest */,
 				39A823EF1B8B8D0A00F43744 /* JenkinsIOSTestTests */,
+				398F40551B93469500375018 /* JenkinsIOSTestLogicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		398F40541B93469500375018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39A823D51B8B8D0900F43744 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +279,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		398F40521B93469500375018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398F40621B936A1100375018 /* TestUtils.m in Sources */,
+				398F405B1B93469500375018 /* JenkinsIOSTestLogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39A823D31B8B8D0900F43744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +295,7 @@
 				39A823E31B8B8D0900F43744 /* ViewController.m in Sources */,
 				39A823E01B8B8D0900F43744 /* AppDelegate.m in Sources */,
 				39A823DD1B8B8D0900F43744 /* main.m in Sources */,
+				398F40611B93652400375018 /* TestUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +337,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		398F405C1B93469500375018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JenkinsIOSTestLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		398F405D1B93469500375018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JenkinsIOSTestLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		39A823F81B8B8D0A00F43744 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +506,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		398F405E1B93469500375018 /* Build configuration list for PBXNativeTarget "JenkinsIOSTestLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				398F405C1B93469500375018 /* Debug */,
+				398F405D1B93469500375018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		39A823D21B8B8D0900F43744 /* Build configuration list for PBXProject "JenkinsIOSTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -418,6 +530,7 @@
 				39A823FC1B8B8D0A00F43744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39A823FD1B8B8D0A00F43744 /* Build configuration list for PBXNativeTarget "JenkinsIOSTestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +539,7 @@
 				39A823FF1B8B8D0A00F43744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
